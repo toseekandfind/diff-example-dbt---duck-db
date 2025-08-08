@@ -1,9 +1,19 @@
 # To update requirements.txt, run the following in a virtual environment:
 #
 #    python3 -m pip install pip-tools
-#    pip-compile --resolver=backtracking
+#    pip-compile --resolver=backtracking requirements.in
 #
-dbt-duckdb>=1.3.1
+# Core dbt and adapter - using latest stable versions
+dbt-core>=1.9.0,<2.0.0
+dbt-duckdb>=1.9.0,<2.0.0
+
+# DuckDB CLI for interactive database exploration
 duckcli>=0.2.1
+
+# Data diff tools for comparing datasets
 data-diff @ git+https://github.com/dbeatty10/data-diff.git@c132655bc60e88ae46a4bb9e36fb154281d60cd4
 sqeleton @ git+https://github.com/dbeatty10/sqeleton.git@d75cb4b59a906ac2c465f47713eebd6d7b2d3dbb
+
+# Development and code quality tools
+pre-commit>=3.0.0
+sqlfluff>=2.0.0

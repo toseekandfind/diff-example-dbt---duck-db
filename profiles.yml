@@ -5,9 +5,31 @@ diffle_shop:
       type: duckdb
       schema: dev
       path: 'diffle_shop.duckdb'
-      threads: 24
+      threads: 4  # Optimal for most local development
+      extensions:
+        - httpfs
+        - parquet
+        - json
+      settings:
+        # Enable better memory management
+        memory_limit: '2GB'
+        # Optimize for analytical workloads
+        max_memory: '80%'
+        # Enable progress bar
+        enable_progress_bar: true
     prod:
       type: duckdb
       schema: prod
       path: 'diffle_shop.duckdb'
-      threads: 24
+      threads: 8  # More threads for production
+      extensions:
+        - httpfs
+        - parquet
+        - json
+      settings:
+        # Enable better memory management
+        memory_limit: '4GB'
+        # Optimize for analytical workloads
+        max_memory: '80%'
+        # Enable progress bar
+        enable_progress_bar: true

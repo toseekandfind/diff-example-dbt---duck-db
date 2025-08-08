@@ -2,6 +2,43 @@ version: 2
 
 models:
   - name: simple_model
+    description: >
+      Simple demonstration model that produces different data based on the target environment.
+      Used to showcase data-diff functionality between development and production environments.
     columns:
       - name: id
+        description: Primary key identifier for the record
+        data_type: integer
+        constraints:
+          - type: not_null
+          - type: unique
+        tests:
+          - not_null
+          - unique
         tags: ['primary-key']
+      
+      - name: color
+        description: Color attribute that varies between environments (orange in prod, black in dev)
+        data_type: varchar
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['orange', 'black', 'blue']
+      
+      - name: environment
+        description: Target environment where the model was executed
+        data_type: varchar
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['prod', 'dev']
+      
+      - name: created_at
+        description: Timestamp when the record was created
+        data_type: timestamp
+        tests:
+          - not_null
+
+    meta:
+      owner: "Data Team"
+      tags: ["demo", "data-diff"]
