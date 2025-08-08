@@ -1,10 +1,65 @@
+# dbt-specific files
 target/
 dbt_packages/
 dbt_modules/
 logs/
-**/.DS_Store
 .user.yml
+
+# Python virtual environments
 venv/
 env/
+.venv/
+.env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# DuckDB database files
 **/*.duckdb
 **/*.duckdb.wal
+**/*.db
+**/*.db-journal
+
+# OS-specific files
+**/.DS_Store
+.DS_Store
+Thumbs.db
+.directory
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-*
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+secrets.yml
+
+# Documentation build
+site/
+docs/_build/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# Pre-commit
+.pre-commit-config.yaml.bak
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
