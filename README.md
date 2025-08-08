@@ -1,9 +1,11 @@
 # 🦆 data-diff-demo
 
-![CI](https://github.com/toseekandfind/diff-example-dbt---duck-db/workflows/CI%2FCD%20Pipeline/badge.svg)
-![dbt](https://img.shields.io/badge/dbt-1.9+-blue)
-![DuckDB](https://img.shields.io/badge/DuckDB-1.0+-orange)
-![Python](https://img.shields.io/badge/Python-3.9+-green)
+[![CI](https://github.com/toseekandfind/diff-example-dbt---duck-db/actions/workflows/ci.yml/badge.svg)](https://github.com/toseekandfind/diff-example-dbt---duck-db/actions/workflows/ci.yml)
+[![dbt](https://img.shields.io/badge/dbt-1.9+-blue)](https://docs.getdbt.com/)
+[![DuckDB](https://img.shields.io/badge/DuckDB-1.3+-orange)](https://duckdb.org/)
+[![Python](https://img.shields.io/badge/Python-3.9+-green)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A comprehensive demonstration of data-diff functionality with a modern dbt project using dbt-duckdb. This project showcases how to detect and analyze data differences between development and production environments using industry best practices.
 
