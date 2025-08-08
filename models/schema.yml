@@ -1,9 +1,9 @@
 version: 2
 
 models:
-  - name: simple_model
+  - name: environment_comparison_demo
     description: >
-      Simple demonstration model that produces different data based on the target environment.
+      Environment comparison demonstration model that produces different data based on the target environment.
       Used to showcase data-diff functionality between development and production environments.
     columns:
       - name: id

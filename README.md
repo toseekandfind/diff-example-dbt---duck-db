@@ -80,8 +80,8 @@ make --version     # Optional
    make data-diff
    
    # Option B: Manual commands
-   dbt run -s simple_model --target prod --profiles-dir .
-   dbt run -s simple_model --target dev --profiles-dir .
+   dbt run -s environment_comparison_demo --target prod --profiles-dir .
+   dbt run -s environment_comparison_demo --target dev --profiles-dir .
    data-diff --dbt --dbt-profiles-dir .
    ```
 

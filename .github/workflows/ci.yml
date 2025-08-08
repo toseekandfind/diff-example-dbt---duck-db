@@ -83,11 +83,11 @@ jobs:
     
     - name: Run production models
       run: |
-        dbt run -s simple_model --target prod --profiles-dir .
+        dbt run -s environment_comparison_demo --target prod --profiles-dir .
     
     - name: Run development models
       run: |
-        dbt run -s simple_model --target dev --profiles-dir .
+        dbt run -s environment_comparison_demo --target dev --profiles-dir .
     
     - name: Test data-diff functionality
       run: |

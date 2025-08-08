@@ -1,8 +1,10 @@
 
 /*
-    Simple model to demonstrate data differences between environments.
+    environment_comparison_demo.sql
+    
+    Demonstrates data differences between environments for data-diff testing.
     This model shows how the same logic can produce different results
-    in development vs production for data-diff testing.
+    in development vs production environments.
 */
 
 {% if target.name == "prod" %}
