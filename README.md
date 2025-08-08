@@ -1,6 +1,6 @@
 # 🦆 data-diff-demo
 
-![CI](https://github.com/dbeatty10/data-diff-demo/workflows/CI/CD%20Pipeline/badge.svg)
+![CI](https://github.com/toseekandfind/diff-example-dbt---duck-db/workflows/CI%2FCD%20Pipeline/badge.svg)
 ![dbt](https://img.shields.io/badge/dbt-1.9+-blue)
 ![DuckDB](https://img.shields.io/badge/DuckDB-1.0+-orange)
 ![Python](https://img.shields.io/badge/Python-3.9+-green)
@@ -50,8 +50,8 @@ make --version     # Optional
 
 1. **Clone the repository**
    ```shell
-   git clone https://github.com/dbeatty10/data-diff-demo.git
-   cd data-diff-demo
+   git clone https://github.com/toseekandfind/diff-example-dbt---duck-db.git
+   cd diff-example-dbt---duck-db
    ```
 
 2. **Set up the environment** (choose one method)
@@ -233,7 +233,7 @@ data-diff --dbt --dbt-profiles-dir . --debug  # Debug data-diff
 - [dbt Documentation](https://docs.getdbt.com/)
 - [DuckDB Documentation](https://duckdb.org/docs/)
 - [data-diff Documentation](https://github.com/datafold/data-diff)
-- [Brooklyn Data Co. SQL Style Guide](https://github.com/brooklyn-data/co/sql-style-guide)
+- [Brooklyn Data Co. SQL Style Guide](https://github.com/brooklyn-data/brooklyn-data-co/blob/main/sql_style_guide.md)
 
 ## 🔗 Related Projects
 
